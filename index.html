@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="side-container"></div>
+    <div id="mySidenav" class="sidenav">
+        <span class=" closebtn" onclick="closeNav()">&times;</span>
+        <a href="#">Acerca de Vexi</a>
+        <a href="#">Tarjetas</a>
+        <a href="#">Preguntas Frecuentes</a>
+        <a href="#">Vexi Tips</a>
+        <a href="#">Ingreso a la app</a>
+        <a href="#">Solicita tu tarjeta</a>
+        <div id="social">
+            <a><img src="/social/iconmonstr-facebook-3-240.png" alt=""></a>
+            <a><img src="/social/iconmonstr-instagram-13-240.png" alt=""></a>
+            <a><img src="/social/iconmonstr-twitter-3-240.png" alt=""></a>
+            <a><img src="/social/iconmonstr-linkedin-3-240.png" alt=""></a>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-wrapper1 landingNavbar">
+            <div id="img"><a href="/#/" class="brand-logo"><img src="/logoVexi.png" alt="Logo Vexi"
+                        class="landingLogo" /></a>
+            </div>
+            <div class="nav-list">
+                <ul style="display:none">
+                    <li><a>Acerca de Vexi</a></li>
+                    <li><a>Tarjetas</a></li>
+                    <li><a>Preguntas Frecuentes</a></li>
+                    <li><a>Vexi Tips</a></li>
+                    <li><a>Ingreso a la app</a></li>
+                    <li id="li-btn1"><a>Solicita tu tarjeta</a></li>
+                </ul>
+                <ul class="menu">
+                    <li>App</li>
+                    <li id="menu" onclick="openNav()">Menu<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z" />
+                        </svg></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav id="nav2" class="hidden">
+        <div class="nav-wrapper landingNavbar">
+            <div id="img"><a href="/#/" class="brand-logo" style="color: #000;"><img src="/logoVexi copy.png" alt="Logo Vexi"
+                        class="landingLogo" loading="lazy" /></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li>App</li>
+                    <li onclick="openNav()">Menu</li>
+                    <li id="li-btn"><a>Solicita tu tarjeta</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="sec1">
+            <div class="title">
+                <h1>Mereces más, Vexi te da más.</h1>
+                <form action="">
+                    <input type="text" placeholder="Escribe tu correo para iniciar tu solicitud">
+                    <button>Solicita tu tarjeta</button>
+                </form>
+            </div>
+            <div id="imgs">
+                <img id="chic" src="/sec1/chic.jpg" alt="">
+                <img id="tarjeta" src="/sec1/tarjetaCarnetAmex2.png" alt="">
+            </div>
+        </section>
+        <section id="sec3">
+            <p>La tarjeta de crédito que siempre quisiste</p>
+            <div id="benef">
+                <div>
+                    <img src="/benef/enLineaHome.png" alt="">
+                    <p>En línea, en minutos</p>
+                </div>
+                <div>
+                    <img src="/benef/sinAnualidadHome.png" alt="">
+                    <p>Sin anualidad</p>
+                </div>
+                <div>
+                    <img src="/benef/sinHistoriaCrediticioHome.png" alt="">
+                    <p>Sin historial crediticio</p>
+                </div>
+                <div>
+                    <img src="/benef/sinComprobantesHome.png" alt="">
+                    <p>Sin comprobantes de ingresos</p>
+                </div>
+                <div>
+                    <img id="calendar" src="/benef/iconoms.png" alt="">
+                    <p>Meses sin intereses</p>
+                </div>
+            </div>
+            <p>Sólo necesitas:</p>
+            <div id="need">
+                <div>
+                    <img src="need/mayor-de-edad.png" alt="">
+                    <p>Ser mayor de edad</p>
+                </div>
+                <div>
+                    <img src="need/identificacion-oficial.png" alt="">
+                    <p>Identificación oficial</p>
+                </div>
+                <div>
+                    <img src="need/ingreso-minimo.png" alt="">
+                    <p>Ingreso mínimo de $2.000 pesos</p>
+                </div>
+                <div>
+                    <img src="need/tener-cuenta-de-facebook.png" alt="">
+                    <p>Tener una cuenta de Facebook</p>
+                </div>
+            </div>
+                <button>Conoce Vexi</button>
+        </section>
+        <section id="sec2">
+            <div id="comments">
+                <h2>Miles de vexicanos contentos</h2>
+                <div id="text">"Muchas gracias por la oportunidad que me dieron al darme la tarjeta estoy muy contento y
+                    ahora que me dieron la
+                    American Express mucho más. Apenas empieza la era de Vexi AMEX. Siempre estaré con Vexi”
+                </div>
+                <a>Ve todo los comentarios</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
