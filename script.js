@@ -1,17 +1,20 @@
-(function () {
 
-  var doc = document.documentElement;
-  var w = window;
 
-  var prevScroll = w.scrollY || doc.scrollTop;
-  var curScroll;
-  var direction = 0;
-  var prevDirection = 0;
 
-  var header = document.getElementById('navbar');
-  var header2 = document.getElementById('nav2');
+const navShow = () => {
 
-  var checkScroll = function () {
+  let doc = document.documentElement;
+  let w = window;
+
+  let prevScroll = w.scrollY || doc.scrollTop;
+  let curScroll;
+  let direction = 0;
+  let prevDirection = 0;
+
+  let header = document.getElementById('header');
+  let header2 = document.getElementById('nav2');
+
+  const checkScroll = () => {
 
     /*
     ** Find the direction of scroll
@@ -35,16 +38,18 @@
     prevScroll = curScroll;
   };
 
-  var toggleHeader = function (direction, curScroll) {
-    if (direction === 2 && curScroll > 550) {
+  const toggleHeader = (direction, curScroll) => {
+    const x = document.getElementById('sec1-btn');
+    if (direction === 2 && curScroll > x.offsetTop) {
 
       //replace 52 with the height of your header in px
 
       header.classList.add('hide');
       header2.classList.add('show');
+
       prevDirection = direction;
     }
-    else if (direction === 1 && curScroll < 500) {
+    else if (direction === 1 && curScroll < x.offsetTop) {
       header2.classList.remove('show');
       header.classList.remove('hide');
       prevDirection = direction;
@@ -53,7 +58,23 @@
 
   window.addEventListener('scroll', checkScroll);
 
-})();
+}; navShow();
+
+
+const navBtn = document.getElementById('li-btn');
+
+navBtn.addEventListener('click', () => {
+    const handle = setInterval(up, 10);
+    function up() {
+      if (window.scrollY == 0) {
+        clearInterval(handle);
+      } else {
+        window.scrollBy(0,-50); 
+      }
+    }
+});
+
+
 
 function openNav() {
   document.getElementById("side-container").style.width = "100%";

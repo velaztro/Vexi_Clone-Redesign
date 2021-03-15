@@ -12,7 +12,7 @@
 <body>
     <div id="side-container"></div>
     <div id="mySidenav" class="sidenav">
-        <span class=" closebtn" onclick="closeNav()">&times;</span>
+        <span class="closebtn" onclick="closeNav()">&times;</span>
         <a href="#">Acerca de Vexi</a>
         <a href="#">Tarjetas</a>
         <a href="#">Preguntas Frecuentes</a>
@@ -26,48 +26,50 @@
             <a><img src="/social/iconmonstr-linkedin-3-240.png" alt=""></a>
         </div>
     </div>
+    <header id='header'>
+        <nav class="navbar" id="navbar">
+            <div class="nav-wrapper1 landingNavbar">
+                <div id="img"><a href="/#/" class="brand-logo"><img src="/logoVexi.png" alt="Logo Vexi"
+                            class="landingLogo" /></a>
+                </div>
+                <div class="nav-list">
+                    <ul style="display:none">
+                        <li><a>Acerca de Vexi</a></li>
+                        <li><a>Tarjetas</a></li>
+                        <li><a>Preguntas Frecuentes</a></li>
+                        <li><a>Vexi Tips</a></li>
+                        <li><a>Ingreso a la app</a></li>
+                        <li id="li-btn1"><a>Solicita tu tarjeta</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li>App</li>
+                        <li id="menu" onclick="openNav()">Menu<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z" />
+                            </svg></li>
+    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <nav id="nav2" class="hidden">
+            <div class="nav-wrapper landingNavbar">
+                <div id="img"><a href="/#/" class="brand-logo" style="color: #000;"><img src="/logoVexi copy.png" alt="Logo Vexi"
+                            class="landingLogo" loading="lazy" /></a>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li>App</li>
+                        <li onclick="openNav()">Menu</li>
+                        <li id="li-btn"><a>Solicita tu tarjeta</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-    <nav class="navbar" id="navbar">
-        <div class="nav-wrapper1 landingNavbar">
-            <div id="img"><a href="/#/" class="brand-logo"><img src="/logoVexi.png" alt="Logo Vexi"
-                        class="landingLogo" /></a>
-            </div>
-            <div class="nav-list">
-                <ul style="display:none">
-                    <li><a>Acerca de Vexi</a></li>
-                    <li><a>Tarjetas</a></li>
-                    <li><a>Preguntas Frecuentes</a></li>
-                    <li><a>Vexi Tips</a></li>
-                    <li><a>Ingreso a la app</a></li>
-                    <li id="li-btn1"><a>Solicita tu tarjeta</a></li>
-                </ul>
-                <ul class="menu">
-                    <li>App</li>
-                    <li id="menu" onclick="openNav()">Menu<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z" />
-                        </svg></li>
-
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <nav id="nav2" class="hidden">
-        <div class="nav-wrapper landingNavbar">
-            <div id="img"><a href="/#/" class="brand-logo" style="color: #000;"><img src="/logoVexi copy.png" alt="Logo Vexi"
-                        class="landingLogo" loading="lazy" /></a>
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li>App</li>
-                    <li onclick="openNav()">Menu</li>
-                    <li id="li-btn"><a href="#sec1">Solicita tu tarjeta</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
     <main>
         <section id="sec1">
@@ -75,7 +77,7 @@
                 <h1>Mereces más, Vexi te da más.</h1>
                 <form action="">
                     <input type="text" placeholder="Escribe tu correo para iniciar tu solicitud">
-                    <button>Solicita tu tarjeta</button>
+                    <button id="sec1-btn">Solicita tu tarjeta</button>
                 </form>
             </div>
             <div id="imgs">
