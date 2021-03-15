@@ -78,11 +78,11 @@ navBtn.addEventListener('click', () => {
 
 function openNav() {
   document.getElementById("side-container").style.width = "100%";
-  document.getElementById("mySidenav").style.width = "350px";
+  document.getElementById("mySidenav").style.display = "flex";
 }
 
 function closeNav() {
+  document.getElementById("mySidenav").style.display = "none";
   document.getElementById("side-container").style.width = "0";
-  document.getElementById("mySidenav").style.width = "0";
   document.body.style.backgroundColor = "rgb(252, 252, 252)";
 }

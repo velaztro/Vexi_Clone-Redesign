@@ -12,19 +12,21 @@ html, body {
     background-color: rgb(252, 252, 252);
 }
 
-img {
+
+#navLogo {
+    width: 12%;
+    margin-left: 5%;
+}
+
+#navbar img, #nav2 img {
     width: 100%;
     height: 100%;
     display: block;
 }
 
-#img {
-    width: 12%;
-    margin-left: 5%;
-}
-
 #nav2 #img {
     width: 25%;
+    margin-left: 4%;
 }
 
 #nav2 {
@@ -74,8 +76,7 @@ header {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width: 40%;
-    box-shadow: 0px 1px 3px 0px black, inset 0px 0px 1px 1px rgb(36, 35, 35);
-}
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;}
 
 .nav-wrapper1 {
     display: flex;
@@ -91,19 +92,26 @@ header {
     width: 100%;
     height: 100%;
     font-size: 1.5vw;
+    font-weight: 500;
     display: flex;
     justify-content: flex-end;
+}
+.menu li:hover {
+    padding-bottom: 1%;
+    border-bottom: 0.35vw solid rgb(234, 11, 140);
 }
 
 #nav2 .nav-list {
     font-size: 1.4vw;
     width: 100%;
+    font-weight: 500;
 }
 
 #menu {
     display: flex;
     align-items: center;
 }
+
 
 ul.menu {
     margin-right: 5%;
@@ -114,10 +122,10 @@ ul.menu {
 ul > li {
     cursor: pointer;
 }
-ul>li:hover{ 
+/*ul>li:hover{ 
     color: rgb(234, 11, 140);
     fill: rgb(234, 11, 140);
-}
+}*/
 
 ul {
     display: flex;
@@ -133,7 +141,7 @@ ul {
 }
 
 #li-btn {
-    background-color: rgb(234, 11, 140);
+    background-color: rgb(240, 11, 144);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -148,7 +156,7 @@ ul {
 }
 #li-btn a{
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
 }
 #li-btn:hover{
     transform: scale(1.08);
@@ -171,55 +179,62 @@ ul {
 /* ==== Side Nav ==== */
 .sidenav {
     height: 100%;
-    width: 0;
+    width: 33%;
     position: fixed;
     top: 0;
     right: 0;
     background-color: rgb(254, 254, 254);
     overflow-x: hidden;
-    transition: all 0.5s ease;
-    padding-top: 60px;
     z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+    display: none;
+    padding-top: 5%;
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     font-weight: 500;
     color: rgb(19, 18, 18);
-    display: block;
-    transition: 0.3s;
-    margin-bottom: 25px;
+    display: inline-block;
+    margin-bottom: 5%;
     white-space:pre-line;
-    width: 400px;
+    width: auto;
+    border-bottom: 0.6vw solid transparent;
+    transition: border 0.4s ease-in-out;
 }
-
 .sidenav a:hover{
-    color: #f1f1f1;
+    border-bottom: 0.6vw solid rgb(234, 11, 140);
 }
 .closebtn:hover {
-    color: #f1f1f1;
+    color: rgb(234, 11, 140);
 }
 
 .sidenav .closebtn {
-    color: #818181;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-}
-#social img {
-    height: 100%;
-    width: 55% !important;
-    object-fit: scale-down;
+    display: inline-block;
 }
 #social {
+    margin-top: 15%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+#social a {
+    width: 8%;
+}
+#social img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
 }
 
 #side-container {
@@ -288,10 +303,12 @@ ul {
     color: black;
     outline: none;
     padding-bottom: 4px;
+    background-color: transparent;
 }
 .title input::placeholder{
     color: rgb(66, 66, 66);
     font-weight: 500;
+    background-color: transparent;
 }
 
 .title button {
@@ -302,6 +319,14 @@ ul {
     padding: 12px;
     background-color: rgb(234, 11, 140);
     color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.title button:hover {
+    display: block;
+    padding-bottom: 20px;
+    background-color: rgb(240, 33, 153);
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
 /* =================== */
 
