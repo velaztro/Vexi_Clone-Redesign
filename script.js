@@ -38,9 +38,12 @@ const navShow = () => {
     prevScroll = curScroll;
   };
 
+  
   const toggleHeader = (direction, curScroll) => {
     const x = document.getElementById('sec1-btn');
-    if (direction === 2 && curScroll > x.offsetTop) {
+    const fromTop = (x.offsetTop + x.offsetHeight);
+    
+    if (direction === 2 && curScroll > fromTop) {
 
       //replace 52 with the height of your header in px
 
@@ -49,7 +52,7 @@ const navShow = () => {
 
       prevDirection = direction;
     }
-    else if (direction === 1 && curScroll < x.offsetTop) {
+    else if (direction === 1 && curScroll < fromTop) {
       header2.classList.remove('show');
       header.classList.remove('hide');
       prevDirection = direction;
@@ -77,12 +80,17 @@ navBtn.addEventListener('click', () => {
 
 
 function openNav() {
+  document.getElementById("mySidenav").style.right = "0";
   document.getElementById("side-container").style.width = "100%";
-  document.getElementById("mySidenav").style.display = "flex";
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.display = "none";
+  document.getElementById("mySidenav").style.right = "-1000px";
   document.getElementById("side-container").style.width = "0";
-  document.body.style.backgroundColor = "rgb(252, 252, 252)";
 }
+
+const otslider = new OTSlider();
+
+otslider.init({
+  element: document.getElementById('ot-slider')
+});

@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/sliderTest/otslider.css" />
+    <script src="sliderTest/otslider.js"></script>
 </head>
 
 <body>
-    <div id="side-container"></div>
+    <div id="side-container" loading="lazy"></div>
     <div id="mySidenav" class="sidenav">
         <span class="closebtn" onclick="closeNav()">&times;</span>
         <a href="#">Inicio</a>
@@ -27,52 +29,42 @@
             <a><img src="/social/iconmonstr-linkedin-3-240.png" alt=""></a>
         </div>
     </div>
-    <header id='header'>
-        <nav class="navbar" id="navbar">
-            <div class="nav-wrapper1 landingNavbar">
-                <div id="navLogo"><a href="/#/" class="brand-logo"><img src="/logoVexi.png" alt="Logo Vexi"
-                            class="landingLogo" /></a>
+    <div id="land-sec">
+        <header id='header'>
+            <nav class="navbar" id="navbar">
+                <div class="nav-wrapper1 landingNavbar">
+                    <div id="navLogo"><a href="/#/" class="brand-logo"><img src="/sec1/logoVexi.png" alt="Logo Vexi"
+                                class="landingLogo" /></a>
+                    </div>
+                    <div class="nav-list">
+                        <ul class="menu">
+                            <li>App</li>
+                            <li id="menu" onclick="openNav()"><span>Menu</span><svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z" />
+                                </svg></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="nav-list">
-                    <ul style="display:none">
-                        <li><a>Acerca de Vexi</a></li>
-                        <li><a>Tarjetas</a></li>
-                        <li><a>Preguntas Frecuentes</a></li>
-                        <li><a>Vexi Tips</a></li>
-                        <li><a>Ingreso a la app</a></li>
-                        <li id="li-btn1"><a>Solicita tu tarjeta</a></li>
-                    </ul>
-                    <ul class="menu">
-                        <li>App</li>
-                        <li id="menu" onclick="openNav()">Menu<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z" />
-                            </svg></li>
-    
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    
-        <nav id="nav2" class="hidden">
-            <div class="nav-wrapper landingNavbar">
-                <div id="img"><a href="/#/" class="brand-logo" style="color: #000;"><img src="/logoVexi copy.png" alt="Logo Vexi"
-                            class="landingLogo" loading="lazy" /></a>
-                </div>
-                <div class="nav-list">
-                    <ul>
-                        <li>App</li>
-                        <li onclick="openNav()">Menu</li>
-                        <li id="li-btn"><a>Solicita tu tarjeta</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+            </nav>
 
+            <nav id="nav2" class="hidden">
+                <div class="nav-wrapper landingNavbar">
+                    <div id="img"><a href="/#/" class="brand-logo" style="color: #000;"><img src="/sec1/logoVexi copy.png"
+                                alt="Logo Vexi" class="landingLogo" loading="lazy" /></a>
+                    </div>
+                    <div class="nav-list">
+                        <ul>
+                            <li>App</li>
+                            <li onclick="openNav()">Menu</li>
+                            <li id="li-btn"><a>Solicita tu tarjeta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-    <main>
         <section id="sec1">
             <div class="title">
                 <h1>Mereces más, Vexi te da más.</h1>
@@ -86,6 +78,9 @@
                 <img id="tarjeta" src="/sec1/tarjetaCarnetAmex2.png" alt="">
             </div>
         </section>
+    </div>
+
+    <main>
         <section id="sec3">
             <p>La tarjeta de crédito que siempre quisiste</p>
             <div id="benef">
@@ -129,7 +124,39 @@
                     <p>Tener una cuenta de Facebook</p>
                 </div>
             </div>
-                <button>Conoce Vexi</button>
+            <button>Conoce Vexi</button>
+        </section>
+        <section id="tarjetas">
+            <p>¡Tu tarjeta ideal sin anualidad de por vida!</p>
+            <div id="vexiCard">
+                <div class="div-image"><img src="/tarjetas/veximinimalista.png" alt=""></div>
+                <div class="perks">
+                    <p>Vexi Carnet</p>
+                    <div class="ot-slider">
+                        <li>Comienza tu historial crediticio sin comprobar ingresos.</li>
+                        <li>Te ayudamos a comenzar de nuevo.</li>
+                        <li>Comisión por apertura desde $250.</li>
+                        <li>Conoce todos nuestros costos y beneficios <a
+                                href="https://vexi.mx/tarjetasCarnet.html">aquí.</a></li>
+                    </div>
+                </div>
+            </div>
+            <div id="amexCard">
+                <div class="perks">
+                    <p>Vexi American Express</p>
+                    <div class="ot-slider2">
+                        <li>Acceso a los beneficios de meses sin intereses en <a
+                                href="https://sites.google.com/view/vexi/menú/meses-sin-intereses">establecimientos
+                                participantes de American Express.</a></li>
+                        <li>Aceptación internacional en la red de establecimientos American Express.</li>
+                        <li>Seguro de Accidente en Viajes por $75,000 dls, seguro de compra protegida.* </li>
+                        <li>Domiciliación de servicios.</a></li>
+                        <li>Comisión por apertura desde $350 (precio de introducción). Conoce todos nuestros costos y
+                            beneficios <a href="https://vexi.mx/tarjetasAmex.html">aquí.</a></li>
+                    </div>
+                </div>
+                <div class="div-image"><img src="/tarjetas/tarjetaVexiAmexReverso.png" alt=""></div>
+            </div>
         </section>
         <section id="sec2">
             <div id="comments">
@@ -141,9 +168,85 @@
                 <a>Ve todo los comentarios</a>
             </div>
         </section>
+        <section id="sec-img" style="display: none;">
+            <h1>Dos años después de haber lanzado nuestra primera tarjeta, ahora le sumamos beneficios de primer nivel
+                para nuestra comunidad Vexicana. </h1>
+        </section>
+        <section id="mentions">
+            <p>Lo que dicen de nosotros</p>
+            <ul>
+                <li>Vexi: el movimiento mexicano que está disrumpiendo los servicios financieros para jóvenes<a
+                        href="https://www.entrepreneur.com/article/342025?fbclid=IwAR0m3J-eQe0oBl7L_gNbmoghstYs42fSD_m3ty1wTYlH3rfV0J1olr41-KI"
+                        target="_blank">Entrepreneur.com</a></li>
+                <li>Ganador: Best scale up Startups in Latin America 2019<a
+                        href="https://www.startupbootcamp.org/blog/2019/02/startupbootcamp-scale-fintech-announces-best-scale-ups-startups-latin-america/?fbclid=IwAR02iWYkCOPx4mfXJlc5t73Z5wA32EhIn2XEP25YfwQgDQAbj_7edcgRnAs"
+                        target="_blank">Startupbootcamp.org</a></li>
+            </ul>
+            <ul>
+                <li>1er lugar Fintech Latam 2018<a
+                        href="http://elempresario.mx/tecnologia/conoce-12-empresas-fintech-programa-aceleracion-village-capital"
+                        target="_blank">Elempresario.mx</a></li>
+                <li>“Las 100 PRO” reconoce y premió a Vexi como una de las startups más prometedoras del país<a
+                        href="https://www.pronetwork.mx/magazine/las-100-pro-reconoce-a-las-proximas-grandes-empresas-de-mexico/"
+                        target="_blank">ProNetwork.mx</a></li>
+            </ul>
+        </section>
+        <footer style="background-color: rgb(45, 45, 55); border: none !important;">
+            <div id="footer">
+                <div id="company">
+                    <div class="div-img"><img src="/footer/logoVexiBlanco.png" alt="Logo Vexi" width="100%"></div>
+                    <p>GRIBMA Sociedad Anónima Promotora de Inversión de Capital Variable. Calle Nueces 289 PA-1, Col. Nueva Santa María, Delegación Azcapotzalco, CDMX 02800</p>
+                </div>
+                <div id="contact">
+                    <p>Siguenos en:</p>
+                    <div id="socialContact">
+                        <a href="#"><img src="/social/iconmonstr-facebook-3-240.png" alt=""></a>
+                        <a href="#"><img src="/social/iconmonstr-instagram-13-240.png" alt=""></a>
+                        <a href="#"><img src="/social/iconmonstr-twitter-3-240.png" alt=""></a>
+                        <a href="#"><img src="/social/iconmonstr-linkedin-3-240.png" alt=""></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="contrato">
+                <ul>
+                    <li>Contrato Vexi</li>
+                    <li>Aviso de privacidad</li>
+                    <li>Terminos y condiciones</li>
+                </ul>
+                <p>©2017 Vexi | Todos los derechos reservados.</p>
+            </div>
+        </footer>
     </main>
 
     <script src="script.js"></script>
 </body>
 
 </html>
+
+
+<!--<div class="ot-slider ot-slide-transition ot-slider-numeric-nav" data-running="true" style="width: 100%;">
+
+    <div class="ot-items" draggable="false">
+        <div class="ot-wrap" draggable="false"
+            style="width: 3464px; transform: translate(-2598px, 0px); font-size: 40px;">
+            <li class="ot-item ot-item-0" style="width: 866px;">Comienza tu historial crediticio sin comprobar ingresos.
+            </li>
+            <li class="ot-item ot-item-1" style="width: 866px;">Te ayudamos a comenzar de nuevo.</li>
+            <li class="ot-item ot-item-2" style="width: 866px;">Comisión por apertura desde $250.</li>
+            <li class="ot-item ot-item-3 active" style="width: 866px;">Conoce todos nuestros costos y beneficios <a
+                    href="https://vexi.mx/tarjetasCarnet.html">aquí.</a></li>
+        </div>
+    </div>
+    <div class="ot-prev-next" style="display: none;"><span class="ot-prev-button"><span class="ot-wrap-outer"><span
+                    class="ot-wrap-inner">〈</span></span></span><span class="ot-next-button"><span
+                class="ot-wrap-outer"><span class="ot-wrap-inner">〉</span></span></span></div>
+    <div class="ot-nav">
+        <ul>
+            <li class="ot-nav-list">1</li>
+            <li class="ot-nav-list">2</li>
+            <li class="ot-nav-list">3</li>
+            <li class="ot-nav-list active">4</li>
+        </ul>
+    </div>
+</div>-->
