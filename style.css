@@ -278,6 +278,7 @@ nav li {
     padding-bottom: 0.35vw;
     background-color: transparent;
     margin-top: 5%;
+    font-size: 1.3vw;
 }
 .title input::placeholder{
     color: rgb(66, 66, 66);
@@ -318,19 +319,19 @@ nav li {
 }
 #comments h2{
     margin: 3% 0;
-    font-size: 2.2vw;
+    font-size: 2.5vw;
     font-weight: 500;
 }
 #text{
     text-align: center;
     width: 80%;
-    font-size: 2.5vw;
+    font-size: 2.7vw;
     font-weight: 600;
 }
 #comments a{
     margin: 3% 0;
     font-weight: 500;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
 }
 /* ==================== */
 
@@ -476,6 +477,7 @@ nav li {
 .perks p {
     font-size: 2vw !important;
     font-weight: 400 !important;
+    margin: 4% 0;
 }
 #vexiCard, #amexCard {
     height: 100%;
@@ -495,41 +497,81 @@ nav li {
     display: block;
     border: 0;
     border-radius: 4%;
-    box-shadow: rgb(86, 87, 88) 2px 4px 4px 0px, rgba(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(20, 204, 218) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 217, 19) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 255) 40px -40px;
-    transition: all 0.4s ease-in-out;
-}
+    border: 1px rgba(219, 73, 255, 0.527) solid;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;}
 #tarjetas div img:hover {
     box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
 }
 #tarjetas ul {
     display: flex;
     justify-content: space-evenly;
-}
-    /*
     flex-direction: column;
     list-style-image: url(/tarjetas/vexi-bullet.png) ;
-    width: auto;
+    width: 100%;
     height: 100%;
-    font-size: 1.2vw;
     list-style-position: inside;
-*/
+}
 #tarjetas .perks {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 55%;
-    text-align: center;
-    background-color: rgba(232,232,232);
+    padding: 0 3%;
     border-radius: 0.6vw;
+    position: relative;
+}
+#vexiCard .perks::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 3vw solid transparent;
+	border-right-color: rgba(232,232,232);
+	border-left: 0;
+	margin-top: -3vw;
+	margin-left: -3vw;
+}
+#amexCard .perks::before {
+	content: '';
+	position: absolute;
+	right: 0px;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 3vw solid transparent;
+	border-left-color: rgba(232,232,232);
+	border-right: 0;
+	margin-top: -3vw;
+	margin-right: -3vw;
 }
 #tarjetas li {
     margin: 2% 0;
-    margin-bottom: 4.5%;
-    font-size: 1.65vw;
-
+    margin-bottom: 0.5%;
+    font-size: 1.3vw;
+    border-radius: 2vw;
+    padding: 1.5vw;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
 }
-/* ============================= */
+.perks div a {
+    text-decoration: none;
+    color: whitesmoke;
+    width: 100% !important;
+}
+.perks div{
+    width: 100%;
+    background: #C518DD;
+    border-radius: 0.5vw;
+    height: auto;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0.8vw;
+    margin: 4% 0;
+}
+/* ================================= */
 
 /* =========== Mentions ============ */
 
@@ -538,7 +580,8 @@ nav li {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 5% 12%;
+    padding: 0 12%;
+    padding-top: 5%;
     background-color: rgb(45, 45, 55);
     color: whitesmoke;
 }
@@ -563,18 +606,21 @@ nav li {
     margin-top: 5%;
 }
 #mentions p {
-    font-size: 2.7vw;
+    font-size: 3vw;
     font-weight: 600;
     margin-bottom: 10%;
 }
+/* ============================ */
 
-/* ============================= */
+
+/* ========== Footer ========== */
 footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: whitesmoke;
+    font-size: 1.2vw;
 }
 #footer {
     display: flex;
@@ -641,4 +687,30 @@ footer {
 #contrato p {
     margin: 2% 0;
     text-align: center;
+}
+
+
+
+#extras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10% 0;
+    width: 100%;
+}
+#extras p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.7vw;
+    margin-bottom: 6%;
+}
+#extras div:nth-child(n+2) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 12%;
+    font-size: 1.4vw;
+}
+#extras div img {
+    width: 40%;
 }
