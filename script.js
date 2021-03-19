@@ -77,3 +77,15 @@ navBtn.addEventListener('click', () => {
     }
 });
 
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.right = "0";
+  document.getElementById("side-container").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.right = "-1000px";
+  document.getElementById("side-container").style.width = "0";
+}
+
