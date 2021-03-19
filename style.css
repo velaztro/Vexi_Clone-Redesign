@@ -315,7 +315,9 @@ nav li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 4% 0;
+    margin: 0 0;
+    background-image: url(/patternpad.svg);
+    box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.5);
 }
 #comments h2{
     margin: 3% 0;
@@ -466,13 +468,15 @@ nav li {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     padding: 5% 0;
 }
 #tarjetas > p {
-    font-size: 2.2vw;
+    font-size: 3vw;
     font-weight: 500;
+    margin-left: 10%;
+    width: 45%;    
 }
 .perks > p {
     font-size: 2vw !important;
@@ -485,7 +489,8 @@ nav li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     padding: 0 9%;
 }
 #tarjetas .div-image {
@@ -497,13 +502,11 @@ nav li {
     display: block;
     border: 0;
     border-radius: 4%;
-    border: 1px rgba(219, 73, 255, 0.527) solid;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;}
-#tarjetas div img:hover {
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;
+    box-shadow: rgba(0, 0, 0, 0.335) 0px 19px 38px, rgba(0, 0, 0, 0.253) 0px 15px 12px;
 }
-#amexCard div img {
-    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+
+#tarjetas div img:hover {
+    box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
 #tarjetas ul {
     display: flex;
@@ -554,10 +557,11 @@ nav li {
     margin: 2% 0;
     margin-bottom: 0.5%;
     font-size: 1.3vw;
-    border-radius: 2vw;
-    padding: 1.5vw;
+    border-radius: 4vw;
+    padding: 1vw;
     background-color: #d9d9d9;
     background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    box-shadow: 0px 0px 3px 0px rgb(104, 109, 110);
 }
 .perks div a {
     text-decoration: none;
@@ -694,7 +698,7 @@ footer {
 }
 
 
-
+/* ========== Seccion Beneficios ========== */
 #extras {
     display: flex;
     flex-direction: column;
@@ -717,4 +721,26 @@ footer {
 }
 #extras div img {
     width: 40%;
+}
+/* ============================== */
+
+
+/* ========== Seccion Imagen ========== */
+#sec-img > div{
+    background-image: url(/sec\ img/pexels-pavel-danilyuk-6407766.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    background-size: cover;
+    height: 70vh;
+    box-shadow: inset 0 0 0 500px rgba(71, 9, 87, 0.486);
+}
+#sec-img div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 2vw;
+}
+#sec-img div h1 {
+    margin: 0 10%;
+    color: white;
 }
