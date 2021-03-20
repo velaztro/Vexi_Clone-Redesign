@@ -85,7 +85,7 @@ function openNav() {
 }
 
 function closeNav() {
-  document.getElementById("mySidenav").style.right = "-1000px";
+  document.getElementById("mySidenav").style.right = "-400%";
   document.getElementById("side-container").style.width = "0";
 }
 

@@ -11,7 +11,15 @@ html, body {
     background-color: rgb(252, 252, 252);
 }
 
+section, #land-sec, .sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ======== Nav Bars ======== */
+
 header {
     position: sticky;
     position: -webkit-sticky;
@@ -21,12 +29,14 @@ header {
     width: 100%;
     z-index: 1;
 }
+
 #navbar {
     top: 0;
     height: 100%;
     width: 100%;
     border-radius: 80px;
 }
+
 #nav2 {
     display: flex;
     justify-content: center;
@@ -37,6 +47,7 @@ header {
     top: -200px;
     transition: all 0.3s ease-in-out;
 }
+
 #header.hide {
     top: -1000px;
 }
@@ -54,6 +65,7 @@ header {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
 }
+
 .nav-wrapper {
     margin-top: 2%;
     border-radius: 80px;
@@ -63,6 +75,7 @@ header {
 }
 
 /* ======== Nav Bars Logos ======== */
+
 nav img {
     width: 100%;
     height: 100%;
@@ -79,8 +92,8 @@ nav img {
     margin-left: 4%;
 }
 
-
 /* ======== Nav Bars lists ======== */
+
 .nav-list {
     display: flex;
     justify-content: flex-end;
@@ -131,22 +144,20 @@ nav ul {
     box-shadow: 0px 1px 3px 0px #C518DD, inset 0px 0px 2px 1px #e62aff;
     transition: all 0.3s ease-in-out;
 }
-#li-btn:hover{
+
+#li-btn:hover {
     background-color: #e328fc;
     box-shadow: 0px 0px 10px 1px #db24f3;
     transform: scale(1.08);
 }
+
 nav li {
     cursor: pointer;
 }
 
-
 /* ==== Side Nav ==== */
+
 .sidenav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: fixed;
     overflow-x: hidden;
     z-index: 4;
@@ -154,7 +165,7 @@ nav li {
     width: 33%;
     padding-top: 5%;
     top: 0;
-    right: -200%;
+    right: -400%;
     background-color: rgb(254, 254, 254);
     transition: right 0.4s ease-in-out;
 }
@@ -167,15 +178,18 @@ nav li {
     font-size: 2vw;
     font-weight: 400;
     color: rgb(19, 18, 18);
-    white-space:pre-line;
+    white-space: pre-line;
     transition: border 0.4s ease-in-out;
 }
-.sidenav a:hover{
+
+.sidenav a:hover {
     border-bottom: 0.6vw solid rgb(234, 11, 140);
 }
+
 .closebtn:hover {
     color: rgb(234, 11, 140);
 }
+
 .sidenav .closebtn {
     cursor: pointer;
     position: absolute;
@@ -185,15 +199,18 @@ nav li {
     margin-left: 4.15vw;
     display: inline-block;
 }
+
 #social {
     margin-top: 15%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 #social a {
     width: 8%;
 }
+
 #social img {
     height: 100%;
     width: 100%;
@@ -201,34 +218,37 @@ nav li {
 }
 
 #side-container {
-    height: 100%;
+    height: 100vh;
     width: 0;
     position: fixed;
     right: 0;
     top: 0;
     background-image: url(/sideNav/Live-Motion-Background.svg);
     background-color: rgb(185, 13, 253, 0.7);
-    background-blend-mode:lighten;
+    background-blend-mode: lighten;
     overflow-x: hidden;
     z-index: 2;
     transition: all 0.25s ease-in;
 }
+
 /* =================== */
 
-
 /* ==== Landpage ==== */
+
 #land-sec {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
+    background-image: url(./etc/background.svg);
+    background-size: 500px;
+    box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.65);
 }
 
 /* ==== Section 1 ==== */
+
 #sec1 {
     margin: 0 5%;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
     height: 100%;
@@ -241,14 +261,17 @@ nav li {
     justify-content: space-between;
     align-items: center;
 }
-#tarjeta{
+
+#tarjeta {
     margin-top: -87.5%;
     margin-right: -20%;
     width: 80%;
 }
+
 #chic {
     width: 100%;
 }
+
 #cel {
     width: 75%;
     z-index: 1;
@@ -265,9 +288,11 @@ nav li {
     font-size: 4vw;
     font-weight: 500;
 }
+
 .title form {
     width: 100%;
 }
+
 .title input {
     width: 100%;
     margin-bottom: 10%;
@@ -280,7 +305,8 @@ nav li {
     margin-top: 5%;
     font-size: 1.3vw;
 }
-.title input::placeholder{
+
+.title input::placeholder {
     color: rgb(66, 66, 66);
     font-weight: 500;
     background-color: transparent;
@@ -297,62 +323,60 @@ nav li {
     transition: all 0.3s ease;
     cursor: pointer;
 }
+
 .title button:hover {
     display: block;
     padding-bottom: 5%;
     background-color: #d816f1;
     box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
 }
+
 /* =================== */
 
-
 /* ==== Section Comments ==== */
+
 #sec2 {
-    line-height: 1.8;
-}
-#comments {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 0 0;
     background-image: url(./etc/background.svg);
     box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.603);
+    line-height: 1.8;
 }
-#comments h2{
+
+#sec2 h2 {
     margin: 3% 0;
     font-size: 2.5vw;
     font-weight: 500;
 }
-#text{
+
+#text {
     text-align: center;
     width: 80%;
     font-size: 2.7vw;
     font-weight: 600;
 }
-#comments a{
+
+#sec2 a {
     margin: 3% 0;
     font-weight: 500;
     font-size: 1.7vw;
 }
+
 /* ==================== */
 
-
 /* ==== Section Benefits and Req ==== */
+
 .sec3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     /*background-color: #2E294E;*/
     background-color: #323365;
 }
-.sec3 > p {
+
+.sec3>p {
     font-size: 2.2vw;
     font-weight: 500;
     color: white;
-    margin: 3.5% 0;;
+    margin: 3.5% 0;
+    ;
 }
 
 #benef {
@@ -363,6 +387,7 @@ nav li {
     height: 11vw;
     margin-bottom: 3.5%;
 }
+
 #benef div {
     display: flex;
     flex-direction: column;
@@ -374,15 +399,18 @@ nav li {
     margin: 2%;
     border-radius: 1.65vw;
 }
+
 #benef img {
     width: 55% !important;
     object-fit: cover;
     border: 0;
 }
+
 #benef div:nth-child(5) img {
     object-fit: cover;
     transform: scale(0.7);
 }
+
 #benef p {
     font-size: 1.25vw;
     width: 90%;
@@ -396,6 +424,7 @@ nav li {
     width: 70%;
     height: 11vw;
 }
+
 #need div {
     display: flex;
     flex-direction: column;
@@ -407,11 +436,13 @@ nav li {
     background-color: whitesmoke;
     margin: 2%;
 }
+
 #need img {
     width: 55% !important;
     object-fit: cover;
     border: 0;
 }
+
 #need p {
     width: 90%;
     text-align: center;
@@ -462,31 +493,29 @@ nav li {
 }
 */
 
-
 /* ====== Section Tarjetas ====== */
+
 #tarjetas {
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
     padding: 5% 0;
     background-image: url(./etc/background.svg);
     background-size: 500px;
     box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.65);
 }
-#tarjetas > p {
+
+#tarjetas>p {
     font-size: 3vw;
     font-weight: 500;
     margin-left: 10%;
-    width: 45%;    
+    width: 45%;
 }
-.perks > p {
+
+.perks>p {
     font-size: 2vw !important;
     font-weight: 400 !important;
     margin: 4% 0;
 }
+
 #vexiCard, #amexCard {
     height: 100%;
     width: 100%;
@@ -497,12 +526,14 @@ nav li {
     margin-bottom: 3%;
     padding: 0 9%;
 }
+
 #tarjetas .div-image {
     width: 30%;
     border: 0;
 }
+
 #tarjetas div img {
-    width:100%;
+    width: 100%;
     display: block;
     border: 0;
     border-radius: 4%;
@@ -512,15 +543,17 @@ nav li {
 #tarjetas div img:hover {
     box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;
 }
+
 #tarjetas ul {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    list-style-image: url(/tarjetas/vexi-bullet.png) ;
+    list-style-image: url(/tarjetas/vexi-bullet.png);
     width: 100%;
     height: 100%;
     list-style-position: inside;
 }
+
 #tarjetas .perks {
     display: flex;
     flex-direction: column;
@@ -531,32 +564,35 @@ nav li {
     border-radius: 0.6vw;
     position: relative;
 }
+
 #vexiCard .perks::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 3vw solid transparent;
-	border-right-color: rgba(232,232,232);
-	border-left: 0;
-	margin-top: -3vw;
-	margin-left: -3vw;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 3vw solid transparent;
+    border-right-color: rgba(232, 232, 232);
+    border-left: 0;
+    margin-top: -3vw;
+    margin-left: -3vw;
 }
+
 #amexCard .perks::before {
-	content: '';
-	position: absolute;
-	right: 0px;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 3vw solid transparent;
-	border-left-color: rgba(232,232,232);
-	border-right: 0;
-	margin-top: -3vw;
-	margin-right: -3vw;
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border: 3vw solid transparent;
+    border-left-color: rgba(232, 232, 232);
+    border-right: 0;
+    margin-top: -3vw;
+    margin-right: -3vw;
 }
+
 #tarjetas li {
     margin: 2% 0;
     margin-bottom: 0.5%;
@@ -567,12 +603,14 @@ nav li {
     background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
     box-shadow: 0px 0px 0.1vw 0 rgb(104, 109, 110);
 }
+
 .perks div a {
     text-decoration: none;
     color: whitesmoke;
     width: 100% !important;
 }
-.perks div{
+
+.perks div {
     width: 100%;
     background: #C518DD;
     border-radius: 0.5vw;
@@ -583,27 +621,27 @@ nav li {
     margin: 4% 0;
     font-size: 1.3vw;
 }
+
 /* ================================= */
 
 /* =========== Mentions ============ */
 
 #mentions {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: flex-start;
     padding: 0 12%;
     padding-top: 5%;
     background-color: rgb(45, 45, 55);
     color: whitesmoke;
 }
+
 #mentions ul {
     display: flex;
     align-items: normal;
     justify-content: space-between;
     margin-bottom: 10%;
 }
-#mentions li{
+
+#mentions li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -612,28 +650,28 @@ nav li {
     font-size: 1.7vw;
     font-weight: 500;
 }
+
 #mentions a {
     text-decoration: none;
-    color:#C518DD;
+    color: #c518dd;
     margin-top: 5%;
 }
+
 #mentions p {
     font-size: 3vw;
     font-weight: 600;
     margin-bottom: 10%;
 }
+
 /* ============================ */
 
-
 /* ========== Footer ========== */
+
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: whitesmoke;
     font-size: 1.2vw;
 }
+
 #footer {
     display: flex;
     align-items: center;
@@ -643,35 +681,41 @@ footer {
     background-color: rgb(45, 45, 55);
     border-top: 1px solid whitesmoke;
 }
+
 #company {
     display: flex;
     align-items: center;
     justify-content: left;
 }
+
 #company p {
     width: 65%;
 }
+
 #company .div-img {
     width: 15%;
     padding-right: 2%;
 }
+
 #footer img {
     width: 100%;
     height: 100%;
-    object-fit: scale-down;
 }
+
 #contact {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 25%;
 }
+
 #socialContact {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
+
 #socialContact a {
     filter: contrast(0);
     cursor: pointer;
@@ -686,24 +730,53 @@ footer {
     width: 100%;
     padding: 0% 5%;
 }
+
 #contrato ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
 }
-#contrato li{
+
+#contrato li {
     width: 100%;
     text-align: center;
 }
+
 #contrato p {
     margin: 2% 0;
     text-align: center;
 }
 
+/* ========== Seccion Imagen ========== */
+
+#sec-img>div {
+    background-image: url(/sec-img/img-sec-low.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -100px;
+    background-size: cover;
+    height: 70vh;
+    box-shadow: inset 0 0 0 42vw rgba(120, 2, 150, 0.596);
+    display: flex;
+}
+
+#sec-img>div div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#sec-img div h1 {
+    margin: 0 10%;
+    color: white;
+    font-size: 2.5vw;
+}
+
+/* =================================== */
 
 /* ========== Seccion Beneficios ========== */
-#extras {
+
+/*#extras {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -729,26 +802,26 @@ footer {
 }
 #extras div img {
     width: 40%;
-}
+}*/
+
 /* ============================== */
 
-
-/* ========== Seccion Imagen ========== */
-#sec-img > div{
-    background-image: url(/sec-img/img-sec-low.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 -100px;
-    background-size: cover;
-    height: 70vh;
-    box-shadow: inset 0 0 0 500px rgba(120, 2, 150, 0.596);
+#extras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: unset;
+    width: auto;
+    height: 100%;
 }
-#sec-img div {
+#extras .div-img {
+    width: 20%;
+}
+#extras img {
+    width: 100%;
+}
+#extras > div:nth-child(1) {
     display: flex;
     align-items: center;
-    text-align: center;
-}
-#sec-img div h1 {
-    margin: 0 10%;
-    color: white;
-    font-size: 2.5vw;
+    justify-content: space-evenly;
 }
