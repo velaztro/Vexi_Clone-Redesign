@@ -338,6 +338,7 @@ nav li {
 #sec2 {
     margin: 0 0;
     background-image: url(./etc/background.svg);
+    background-size: 500px;
     box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.603);
     line-height: 1.8;
 }
@@ -371,12 +372,11 @@ nav li {
     background-color: #323365;
 }
 
-.sec3>p {
-    font-size: 2.2vw;
+.sec3 > p {
+    font-size: 3vw;
     font-weight: 500;
     color: white;
     margin: 3.5% 0;
-    ;
 }
 
 #benef {
@@ -460,40 +460,8 @@ nav li {
     color: whitesmoke;
 }
 
-/*
-#sec-img {
-    position: absolute; 
-    height: 66%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('/pexels-pavel-danilyuk-6407766.jpg');
-    background-position: center;
-    background-size: cover;
-    z-index: -1;
-}
-#sec-img::before {    
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(19, 57, 138, 0.603);
-}
-#sec-img h1 {
-    position: relative;
-    color: #ffffff;
-    width: 60%;
-    font-weight: 500;
-    font-size: 2vw;
-    line-height: 1.7;
-    text-align: center;
-}
-*/
 
-/* ====== Section Tarjetas ====== */
+/* =========== Section Tarjetas =========== */
 
 #tarjetas {
     align-items: flex-start;
@@ -523,7 +491,6 @@ nav li {
     justify-content: space-around;
     align-items: center;
     margin-top: 3%;
-    margin-bottom: 3%;
     padding: 0 9%;
 }
 
@@ -601,7 +568,7 @@ nav li {
     padding: 1vw;
     background-color: #d9d9d9;
     background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
-    box-shadow: 0px 0px 0.1vw 0 rgb(104, 109, 110);
+    box-shadow: 0 0 5px 1px rgb(134 134 134 / 59%);
 }
 
 .perks div a {
@@ -748,6 +715,9 @@ footer {
     text-align: center;
 }
 
+/* =================================== */
+
+
 /* ========== Seccion Imagen ========== */
 
 #sec-img>div {
@@ -769,42 +739,12 @@ footer {
 #sec-img div h1 {
     margin: 0 10%;
     color: white;
-    font-size: 2.5vw;
+    font-size: 3vw;
 }
 
 /* =================================== */
 
-/* ========== Seccion Beneficios ========== */
-
-/*#extras {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 10% 0;
-    width: 100%;
-    background-image: url(./etc/background.svg);
-    background-size: 550px;
-    box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.5);
-
-}
-#extras p {
-    text-align: center;
-    font-weight: 500;
-    font-size: 2.7vw;
-    margin-bottom: 6%;
-}
-#extras div:nth-child(n+2) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 12%;
-    font-size: 1.4vw;
-}
-#extras div img {
-    width: 40%;
-}*/
-
-/* ============================== */
+/* ========== Section Beneficios ========== */
 
 #extras {
     display: flex;
@@ -813,16 +753,45 @@ footer {
     align-items: unset;
     width: auto;
     height: 100%;
+    padding: 0 10%;
+    background-image: url(./etc/background.svg);
+    background-size: 500px;
+    box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.65);
+}
+#extras > div div {
+    width: 34%;
 }
 #extras .div-img {
-    width: 20%;
+    width: 25%;
 }
 #extras img {
     width: 100%;
 }
-#extras > div:nth-child(1) {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+
+#extras li {
+    list-style: none;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 5%;
+    background-color: #d9d9d9;
+    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    box-shadow: 0 0 5px 1px rgba(134, 134, 134, 0.589);
+    font-size: 1.3vw;
 }
+#extras > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+}
+#extras p {
+    font-size: 3vw;
+    text-align: left;
+    font-weight: 500;
+}
+
+
+/* ============================== */
+
 
