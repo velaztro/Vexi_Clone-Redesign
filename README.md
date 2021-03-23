@@ -1,7 +1,7 @@
 # Vexi Landing Page Redesign
 
 ## Overview
-In this project I redesign the landing page from [Vexi](https://vexi.mx), a Mexican personal credit company.
+In this project I redesign the landing page from [Vexi](https://vexi.mx), a Mexican credit card issuer company.
 
 ## Features and implementations
 <ul>
