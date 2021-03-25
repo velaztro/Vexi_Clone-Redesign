@@ -8,6 +8,7 @@
 
 html, body {
     background-color: rgb(254, 254, 254);
+    height: 100%;
 }
 img {
     display: block !important;
@@ -329,18 +330,13 @@ nav li {
 .title form {
     width: 100%;
 }
-input[type=text] {   
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;  
-}
 .title input {
     width: 100%;
     margin-top: 10%;
     margin-bottom: 10%;
     padding-bottom: 0.35vw;
     border: 0;
-    border-bottom: 0.125vw solid rgb(46, 45, 45);
+    border-bottom: 0.175vw solid rgb(46, 45, 45);
     font-size: 1.3vw;
     color: black;
     outline: none;
@@ -348,6 +344,9 @@ input[type=text] {
     box-shadow: none;
     border-radius: 0;
     -webkit-border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;  
 }
 
 .title input::placeholder {
@@ -914,6 +913,7 @@ footer {
     .title input {
         font-size: 2.65vw;
         margin: 0;
+        border-bottom: 0.35vw solid black;
     }
     .title button {
         width: 50%;
@@ -1141,5 +1141,41 @@ footer {
 
     #socialContact a {
         width: 18%;
+    }
+}
+
+@media (max-width: 600px) and (orientation: portrait) {
+
+    header {
+       height: 5%; 
+    }
+    #navLogo {
+        width: 25%;
+    }
+    nav li {
+        font-size: 4vw;
+    }
+    
+    .title {
+        justify-content: space-between;
+    }
+    .title h1 {
+        font-size: 10vw;
+        width: 90%;
+    }
+    .title form {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%;
+    }
+    .title input {
+        font-size: 100%;
+    }
+    .title button {
+        margin: 0;
+        margin-top: 10%;
+        width: 100%;
+        font-size: 4.5vw;
+        padding: 2.5%;
     }
 }
