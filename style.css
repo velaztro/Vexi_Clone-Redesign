@@ -329,10 +329,10 @@ nav li {
 .title form {
     width: 100%;
 }
-
-input[type=text],
-textarea {
-  -webkit-appearance: none;
+input[type=text] {   
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;  
 }
 .title input {
     width: 100%;
