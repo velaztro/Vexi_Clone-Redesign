@@ -346,6 +346,8 @@ input[type=text] {
     outline: none;
     background-color: transparent;
     box-shadow: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
 }
 
 .title input::placeholder {
