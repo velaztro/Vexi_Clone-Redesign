@@ -405,13 +405,15 @@ nav li {
     height: 100%;
     /*background-color: #2E294E;*/
     background-color: #323365;
+    padding: 3% 0;
+    border: none;
 }
 
 .sec3 > p {
     font-size: 3vw;
     font-weight: 500;
     color: white;
-    margin: 3.5% 0;
+    margin-bottom: 3%;
 }
 
 #benef {
@@ -420,7 +422,6 @@ nav li {
     justify-content: center;
     width: 85%;
     height: 11vw;
-    margin-bottom: 3.5%;
 }
 
 #benef div {
@@ -431,8 +432,8 @@ nav li {
     width: 100%;
     height: 100%;
     background-color: whitesmoke;
-    margin: 2% 3.5%;
-    border-radius: 1.65vw;
+    margin: 0 2%;
+    border-radius: 1vw;
 }
 
 #benef img {
@@ -485,7 +486,7 @@ nav li {
 }
 
 .sec3 button {
-    margin: 3.5% 0;
+    margin-top: 5%;
     width: 25%;
     font-size: 1.5vw;
     border: none;
@@ -791,7 +792,7 @@ footer {
     align-items: unset;
     width: auto;
     height: 100%;
-    padding: 0 10%;
+    padding: 5% 10%;
     background-image: url(./etc/background.svg);
     background-size: 500px;
     box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.65);
@@ -865,6 +866,10 @@ footer {
 
 @media (max-width: 1024px) and (orientation: portrait) {
 
+    ::after,::before {
+        content: none;
+        display: none;
+    }
     /* ====== Landing Section ====== */
     header {
         height: 7%;
@@ -927,15 +932,17 @@ footer {
         flex-wrap: wrap;
         width: 100%;
         height: auto;
-        margin-bottom: 5%;
+    }
+    #benef img {
+        width: 50% !important;
     }
     #benef p {
         font-size: 2.3vw;
     }
     #benef div {
-        width: 24%;
-        height: 42%;
-
+        width: 25%;
+        height: 17vw;
+        margin: 1% 3%;
     }
 
     /* ====== Tarjetas ====== */
@@ -949,7 +956,7 @@ footer {
         width: 80%;
         font-size: 5vw;
         margin: 0;
-        margin-bottom: 6.5%;
+        margin-bottom: 8%;
     }
     #tarjetas > div {
         display: flex;
@@ -964,7 +971,10 @@ footer {
     }
     #tarjetas .div-image {
         width: 75%;
-        margin-bottom: 5%;
+        margin-bottom: 10%;
+    }
+    #tarjetas div img {
+        box-shadow: rgb(0 0 0 / 34%) 0px 10px 20px 0px;
     }
 
     #tarjetas .perks {
@@ -982,16 +992,20 @@ footer {
         font-size: 2.1vw;
         margin-bottom: 4%;
         text-align: justify;
+        list-style: none;
+        border-radius: 1vw;
+        box-shadow: 0 0 5px 0px rgb(134 134 134 / 59%);
     }
     .perks > div {
         font-size: 2.1vw;
     }
 
 
-    /* ====== Benefits ====== */
+    /* ====== Extras ====== */
 
     #extras {
-        padding: 0 5%;
+        padding: 5% 5%;
+        padding-bottom: 0;
     }
     #extras p {
         font-size: 5vw;
