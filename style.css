@@ -345,9 +345,7 @@ input[type=text] {
     color: black;
     outline: none;
     background-color: transparent;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    box-shadow: none;
 }
 
 .title input::placeholder {
