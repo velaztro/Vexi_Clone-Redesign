@@ -1178,8 +1178,7 @@ footer {
     
 
     #land-sec {
-        height: max-content;
-        height: -webkit-fill-available;
+        height: auto;
     }
     #sec1 {
     }
