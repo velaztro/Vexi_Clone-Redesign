@@ -1164,7 +1164,7 @@ footer {
     }
 
     header {
-       height: 10%; 
+       height: 7vh; 
     }
     #navLogo {
         width: 25%;
@@ -1177,6 +1177,10 @@ footer {
     }
     
 
+    #land-sec {
+        height: max-content;
+        height: -webkit-fill-available;
+    }
     #sec1 {
     }
     .title {
