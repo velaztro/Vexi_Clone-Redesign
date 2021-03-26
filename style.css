@@ -1181,6 +1181,8 @@ footer {
     }
     .title {
         justify-content: space-evenly;
+        padding: 0;
+        margin: 5% 5%;
     }
     .title h1 {
         font-size: 10vw;
