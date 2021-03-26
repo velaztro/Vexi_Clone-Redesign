@@ -293,7 +293,7 @@ nav li {
 }
 
 #imgs {
-    width: 30%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1146,18 +1146,38 @@ footer {
 
 @media (max-width: 600px) and (orientation: portrait) {
 
+    #side-container {
+        display: none;
+    }
+    .sidenav {
+        width: 100%;
+        transition: 0.3s ease-in-out;
+        justify-content: space-evenly;
+    }
+    .sidenav .closebtn {
+        font-size: 8vw;
+        top: 2.5%;
+    }
+    .sidenav a {
+        font-size: 5vw;
+        margin-bottom: -10%;
+    }
+
     header {
-       height: 5%; 
+       height: 7%; 
     }
     #navLogo {
         width: 25%;
+    }
+    nav ul {
+        margin-right: 2.5%;
     }
     nav li {
         font-size: 4vw;
     }
     
     .title {
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
     .title h1 {
         font-size: 10vw;
@@ -1169,7 +1189,7 @@ footer {
         margin-top: 10%;
     }
     .title input {
-        font-size: 100%;
+        font-size: 4vw;
     }
     .title button {
         margin: 0;
@@ -1177,5 +1197,9 @@ footer {
         width: 100%;
         font-size: 4.5vw;
         padding: 2.5%;
+    }
+
+    .sec3 > p {
+        font-size: 6vw;
     }
 }
