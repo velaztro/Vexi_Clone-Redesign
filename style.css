@@ -1164,7 +1164,7 @@ footer {
     }
 
     header {
-       height: 15%; 
+       height: 7vh; 
     }
     #navLogo {
         width: 25%;
@@ -1176,6 +1176,9 @@ footer {
         font-size: 4vw;
     }
     
+
+    #sec1 {
+    }
     .title {
         justify-content: space-evenly;
     }

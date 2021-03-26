@@ -28,57 +28,60 @@
             <a><img src="/social/iconmonstr-linkedin-3-240.png" alt=""></a>
         </div>
     </div>
-    <div id="land-sec">
-        <header id='header'>
-            <nav class="navbar" id="navbar">
-                <div class="nav-wrapper1 landingNavbar">
-                    <div id="navLogo"><a href="/#/" class="brand-logo"><img src="/sec1/logoVexi.png" alt="Logo Vexi"
-                                class="landingLogo" /></a>
+    <div>
+        <div id="land-sec">
+            <header id='header'>
+                <nav class="navbar" id="navbar">
+                    <div class="nav-wrapper1 landingNavbar">
+                        <div id="navLogo"><a href="/#/" class="brand-logo"><img src="/sec1/logoVexi.png" alt="Logo Vexi"
+                                    class="landingLogo" /></a>
+                        </div>
+                        <div class="nav-list">
+                            <ul class="menu">
+                                <li>App</li>
+                                <li id="menu" onclick="openNav()"><span>Menú</span><img src="/sec1/menu.svg" alt="menu svg">
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="nav-list">
-                        <ul class="menu">
-                            <li>App</li>
-                            <li id="menu" onclick="openNav()"><span>Menú</span><img src="/sec1/menu.svg" alt="menu svg">
-                            </li>
-                        </ul>
+                </nav>
+    
+                <nav id="nav2" class="hidden">
+                    <div class="nav-wrapper landingNavbar">
+                        <div id="img"><a href="/#/" class="brand-logo" style="color: #000;"><img
+                                    src="/sec1/logoVexi copy.png" alt="Logo Vexi" class="landingLogo" loading="lazy" /></a>
+                        </div>
+                        <div class="nav-list">
+                            <ul>
+                                <li>App</li>
+                                <li onclick="openNav()">Menu</li>
+                                <li id="li-btn"><a>Solicita tu tarjeta</a></li>
+                            </ul>
+                        </div>
                     </div>
+                </nav>
+            </header>
+    
+            <section id="sec1">
+                <div class="title">
+                    <h1>Mereces más, Vexi te da más.</h1>
+                    <form action="">
+                        <input type="text" placeholder="Escribe tu correo para iniciar tu solicitud">
+                        <button id="sec1-btn">Solicita tu tarjeta</button>
+                    </form>
                 </div>
-            </nav>
-
-            <nav id="nav2" class="hidden">
-                <div class="nav-wrapper landingNavbar">
-                    <div id="img"><a href="/#/" class="brand-logo" style="color: #000;"><img
-                                src="/sec1/logoVexi copy.png" alt="Logo Vexi" class="landingLogo" loading="lazy" /></a>
-                    </div>
-                    <div class="nav-list">
-                        <ul>
-                            <li>App</li>
-                            <li onclick="openNav()">Menu</li>
-                            <li id="li-btn"><a>Solicita tu tarjeta</a></li>
-                        </ul>
-                    </div>
+                <div id="imgs">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="/sec1/chic-dog.jpg">
+                        <source media="(max-width: 1024px)" srcset="/sec1/comb2.jpg">
+                        <img loading="lazy" id="chic" src="/sec1/chic-small-comb2.png" alt="">
+                    </picture>
+                    <!--<img loading="lazy" id="tarjeta" src="/sec1/tarjetaCarnetAmex2.png" alt="" style="z-index: -10;">-->
                 </div>
-            </nav>
-        </header>
-
-        <section id="sec1">
-            <div class="title">
-                <h1>Mereces más, Vexi te da más.</h1>
-                <form action="">
-                    <input type="text" placeholder="Escribe tu correo para iniciar tu solicitud">
-                    <button id="sec1-btn">Solicita tu tarjeta</button>
-                </form>
-            </div>
-            <div id="imgs">
-                <picture>
-                    <source media="(max-width: 600px)" srcset="/sec1/chic-dog.jpg">
-                    <source media="(max-width: 1024px)" srcset="/sec1/comb2.jpg">
-                    <img loading="lazy" id="chic" src="/sec1/chic-small-comb2.png" alt="">
-                </picture>
-                <!--<img loading="lazy" id="tarjeta" src="/sec1/tarjetaCarnetAmex2.png" alt="" style="z-index: -10;">-->
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
+
 
     <main class="">
         <section class="sec3 item0">
