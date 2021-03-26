@@ -1144,6 +1144,7 @@ footer {
     }
 }
 
+
 @media (max-width: 600px) and (orientation: portrait) {
 
     #side-container {
@@ -1164,10 +1165,10 @@ footer {
     }
 
     header {
-       height: 7vh; 
+       height: 8vh; 
     }
     #navLogo {
-        width: 25%;
+        width: 30%;
     }
     nav ul {
         margin-right: 2.5%;
@@ -1175,13 +1176,25 @@ footer {
     nav li {
         font-size: 4vw;
     }
+
+    #nav2 {
+        height: 6%;
+    }
+    .nav-wrapper {
+        width: 70%;
+    }
+    #nav2 li {
+        font-size: 3.5vw;
+    }
+    #nav2 .nav-list #li-btn {
+        font-size: 3.5vw;
+    }
     
 
     #land-sec {
         height: auto;
     }
-    #sec1 {
-    }
+
     .title {
         justify-content: space-evenly;
     }
@@ -1206,6 +1219,151 @@ footer {
     }
 
     .sec3 > p {
-        font-size: 6vw;
+        font-size: 8vw;
+    }
+    #benef div {
+        width: 40%;
+        height: 30vw;
+    }
+    #benef p {
+        font-size: 4vw;
+    }
+
+    #tarjetas > p {
+        font-size: 8vw;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    #tarjetas .div-image {
+        margin-bottom: 5%;
+        margin-top: 15%;
+    }
+    #tarjetas > div {
+        flex-direction: column;
+    }
+    #tarjetas .perks {
+        width: 100%;
+        padding: 0;
+    }
+    .perks > p {
+        font-size: 6.5vw !important;
+    }
+    #tarjetas li {
+        font-size: 4vw;
+        margin-bottom: 3%;
+    }
+    .perks div {
+        font-size: 4vw;
+        padding: 2vw;
+    }
+
+
+    #sec-img div h1 {
+        font-size: 5vw;
+        margin: 0;
+    }
+
+
+    #extras p {
+        font-size: 8vw;
+    }
+    #extras > div {
+        flex-direction: column;
+    }
+    #extras .div-img {
+        order: 1;
+        width: 65%;
+    }
+    #extras > div div {
+        order: 2;
+        width: 100%;
+    }
+    #extras li {
+        font-size: 4vw;
+    }
+
+    #sec2 h2 {
+        font-size: 5vw;
+        text-align: center;
+        line-height: 1.4;
+    }
+    #text {
+        font-size: 4vw;
+    }
+    #sec2 a {
+        font-size: 3.5vw;
+    }
+
+
+    #need {
+        flex-wrap: wrap;
+        height: 100%;
+    }
+    #need div {
+        width: 35%;
+        height: 30vw;
+    }
+    #need p {
+        font-size: 4vw;
+    }
+    .sec3 button {
+        font-size: 4vw;
+        width: 55%;
+        margin-bottom: 5%;
+    }
+
+    #mentions p {
+        font-size: 8vw;
+    }
+    #mentions ul {
+        flex-direction: column;
+        margin: 0;
+    }
+    #mentions li {
+        width: 100%;
+        margin-bottom: 15%;
+        text-align: left;
+        font-size: 4vw;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+    #company .div-img {
+        width: 22%;
+    }
+    #company p {
+        width: 90%;
+        font-size: 2.5vw;
+    }
+    #contact {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #contact p {
+        font-size: 2.5vw;
+    }
+    #socialContact {
+        width: 25%;
+        padding: 3% 0;
+    }
+    #socialContact a {
+        width: 100%;
+        margin: 5% 5%;
+    }
+    #contrato ul {
+        font-size: 2.5vw;
+    }
+    #contrato p {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 600px) and (min-height: 750px) and (orientation: portrait) {
+    
+    #land-sec {
+        height: 100vh;
     }
 }
