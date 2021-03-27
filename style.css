@@ -319,16 +319,16 @@ nav li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 
 .title h1 {
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 500;
 }
 
 .title form {
-    width: 100%;
+    width: 90%;
 }
 .title input {
     width: 100%;
@@ -380,7 +380,7 @@ nav li {
 
 #sec2 {
     margin: 0 0;
-    padding: 5%;
+    padding: 5% 10%;
     background-image: url(./etc/background.svg);
     background-size: 500px;
     box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.603);
@@ -395,7 +395,6 @@ nav li {
 
 #text {
     text-align: center;
-    width: 80%;
     font-size: 2.7vw;
     font-weight: 600;
 }
@@ -440,7 +439,7 @@ nav li {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: whitesmoke;
+    background-color: rgb(252, 252, 252);
     margin: 0 2%;
     border-radius: 1vw;
 }
@@ -478,7 +477,7 @@ nav li {
     width: 100%;
     height: 100%;
     border-radius: 1.65vw;
-    background-color: whitesmoke;
+    background-color: rgb(252, 252, 252);
     margin: 2%;
 }
 
@@ -536,14 +535,14 @@ nav li {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 3%;
-    padding: 0 9%;
+    padding: 0 10%;
 }
 
 #tarjetas .div-image {
-    width: 30%;
+    width: 32%;
     border: 0;
 }
 
@@ -588,7 +587,7 @@ nav li {
     width: 0;
     height: 0;
     border: 3vw solid transparent;
-    border-right-color: rgba(232, 232, 232);
+    border-right-color: rgba(221, 221, 221);
     border-left: 0;
     margin-top: -3vw;
     margin-left: -3vw;
@@ -602,7 +601,7 @@ nav li {
     width: 0;
     height: 0;
     border: 3vw solid transparent;
-    border-left-color: rgba(232, 232, 232);
+    border-left-color: rgb(221, 221, 221);
     border-right: 0;
     margin-top: -3vw;
     margin-right: -3vw;
@@ -612,10 +611,9 @@ nav li {
     margin: 2% 0;
     margin-bottom: 0.5%;
     font-size: 1.3vw;
-    border-radius: 4vw;
+    border-radius: 0.5vw;
     padding: 1vw;
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    background-color: #f3f3f3;
     box-shadow: 0 0 5px 1px rgb(134 134 134 / 59%);
 }
 
@@ -635,6 +633,8 @@ nav li {
     padding: 0.8vw;
     margin: 4% 0;
     font-size: 1.3vw;
+    box-shadow: 0 0 5px 1px rgb(134 134 134 / 59%);
+
 }
 
 /* ================================= */
@@ -805,9 +805,10 @@ footer {
     background-image: url(./etc/background.svg);
     background-size: 500px;
     box-shadow: inset 0 0 20px 35px rgb(252, 252, 252), inset 0 0 0 500px rgba(252, 252, 252, 0.65);
+    padding-bottom: 0;
 }
 #extras > div div {
-    width: 34%;
+    width: 37%;
 }
 #extras .div-img {
     width: 25%;
@@ -818,43 +819,13 @@ footer {
 
 #extras li {
     list-style: none;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 1vw;
+    padding: 2.5%;
     margin: 5%;
-    background-color: #d9d9d9;
-    background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+    background-color: #f3f3f3;
     box-shadow: 0 0 5px 1px rgba(134, 134, 134, 0.589);
     font-size: 1.3vw;
     position: relative;
-}
-#extras div div:nth-child(1) li::before {
-    content: '';
-	position: absolute;
-	right: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 2.2vw solid transparent;
-	border-left-color: #d9d9d9;
-    background-color: none;
-	border-right: 0;
-	border-bottom: 0;
-	margin-top: -4%;
-	margin-right: -8.5%;
-}
-#extras div div:nth-child(3) li::before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 0;
-	height: 0;
-	border: 2.2vw solid transparent;
-	border-right-color: #f6f2f2;
-	border-left: 0;
-	border-bottom: 0;
-	margin-top: -4%;
-	margin-left: -8.5%;
 }
 #extras > div {
     display: flex;
@@ -867,6 +838,7 @@ footer {
     font-size: 3vw;
     text-align: left;
     font-weight: 500;
+    margin-bottom: 5%;
 }
 
 
