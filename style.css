@@ -806,7 +806,7 @@ footer {
 /* ============================== */
 
 
-@media (max-width: 1024px) and (orientation: portrait) {
+@media handheld and (max-width: 1024px) and (orientation: portrait) {
 
     ::after,::before {
         content: none;
@@ -1079,7 +1079,7 @@ footer {
 }
 
 /*  ================= Mobile RWD ========================  */
-@media (max-width: 600px) and (orientation: portrait) {
+@media handheld and (max-width: 600px) and (orientation: portrait) {
 
     #side-container {
         display: none;
@@ -1099,7 +1099,7 @@ footer {
     }
 
     header {
-       height: 8vh; 
+        height: 8vh; 
     }
     #navLogo {
         width: 30%;
