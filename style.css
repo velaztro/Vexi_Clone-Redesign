@@ -264,14 +264,6 @@ nav li {
     height: 100%;
 }
 
-#imgs {
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #tarjeta {
     margin-top: -88.5%;
     margin-right: -20%;
