@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin> 
     <link rel="dns-prefetch" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8" />
@@ -76,7 +76,7 @@
                 <picture>
                     <source media="(max-width: 600px)" srcset="/sec1/chic-dog.jpg">
                     <source media="(max-width: 1024px)" srcset="/sec1/comb.jpg">
-                    <img id="chic" src="/sec1/chic-small-comb2.png" alt="" width=100vw height=auto>
+                    <img id="chic" src="/sec1/chic-small-comb2.png" alt="" style="width: 100vw;">
                 </picture>
         </section>
     </div>
@@ -153,7 +153,7 @@
         </section>
 
         <section id="sec-img">
-            <div>
+            <div loading="lazy">
                 <div>
                     <h1>Dos años después de haber lanzado nuestra primera tarjeta, ahora le sumamos beneficios de primer
                         nivel
@@ -172,7 +172,7 @@
                         <li>Define un monto límite para tus compras.</li>
                     </ul>
                 </div>
-                <div class="div-img"><img src="./extras/Method Draw Image-2.png" alt="" width=100% height=100%></div>
+                <div class="div-img"><img loading="lazy" src="./extras/Method Draw Image-2.png" alt="" width=100% height=100%></div>
                 <div>
                     <ul>
                         <li>Parcializa tus compras en pagos fijos desde tu app.</li>
@@ -234,7 +234,7 @@
             </ul>
         </section>
 
-        <footer class="item7" style="background-color: rgb(45, 45, 55); border: none !important;">
+        <footer style="background-color: rgb(45, 45, 55); border: none !important;">
             <div id="footer">
                 <div id="company">
                     <div class="div-img"><img src="/footer/logoVexiBlanco.png" alt="Logo Vexi" width="100%"></div>
