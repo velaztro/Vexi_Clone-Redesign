@@ -1197,6 +1197,9 @@ footer {
     }
 
 
+    #sec-img>div {
+        background-image: url(./sec-img/img-sec-mobile.jpg);
+    }
     #sec-img div h1 {
         font-size: 5vw;
         margin: 0;
@@ -1239,7 +1242,7 @@ footer {
         height: 100%;
     }
     #need div {
-        width: 35%;
+        width: 37%;
         height: 30vw;
     }
     #need p {
