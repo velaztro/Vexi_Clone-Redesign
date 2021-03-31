@@ -453,7 +453,7 @@ picture {
     border-radius: 0.4vw;
     padding: 1.1%;
     background-color: #C518DD;
-    color: whitesmoke;
+    color: white;
 }
 
 
@@ -567,7 +567,7 @@ picture {
 
 .perks div a {
     text-decoration: none;
-    color: whitesmoke;
+    color: white;
     width: 100% !important;
 }
 
@@ -576,7 +576,7 @@ picture {
     background: #C518DD;
     border-radius: 0.5vw;
     height: auto;
-    color: whitesmoke;
+    color: white;
     text-align: center;
     padding: 0.8vw;
     margin: 4% 0;
@@ -594,7 +594,7 @@ picture {
     padding: 0 12%;
     padding-top: 5%;
     background-color: rgb(45, 45, 55);
-    color: whitesmoke;
+    color: white;
 }
 
 #mentions ul {
@@ -631,7 +631,7 @@ picture {
 /* ========== Footer ========== */
 
 footer {
-    color: whitesmoke;
+    color: white;
     font-size: 1.2vw;
 }
 
@@ -642,7 +642,7 @@ footer {
     margin: 0% 5%;
     padding: 1% 0%;
     background-color: rgb(45, 45, 55);
-    border-top: 1px solid whitesmoke;
+    border-top: 1px solid white;
 }
 
 #company {
