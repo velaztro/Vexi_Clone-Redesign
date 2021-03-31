@@ -515,7 +515,7 @@ picture {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    list-style-image: url(/tarjetas/vexi-bullet.png);
+    list-style: none;
     width: 100%;
     height: 100%;
     list-style-position: inside;
@@ -722,7 +722,7 @@ footer {
 /* ========== Seccion Imagen ========== */
 
 #sec-img>div {
-    background-image: url(/sec-img/img-sec-low.jpg);
+    background-image: url(./sec-img/img-sec-low.jpg);
     background-repeat: no-repeat;
     background-position: 0 -100px;
     background-size: cover;
