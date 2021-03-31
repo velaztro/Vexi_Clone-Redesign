@@ -265,19 +265,8 @@ nav li {
     height: 100%;
 }
 
-#tarjeta {
-    margin-top: -88.5%;
-    margin-right: -20%;
-    width: 80%;
-}
-
-#chic {
-    width: 100%;
-}
-
-#cel {
-    width: 75%;
-    z-index: 1;
+picture {
+    width: 35%;
 }
 
 .title {
@@ -517,8 +506,6 @@ nav li {
     box-shadow: rgba(0, 0, 0, 0.335) 0px 19px 38px, rgba(0, 0, 0, 0.253) 0px 15px 12px;
 }
 
-#tarjetas div img:hover {
-}
 
 #tarjetas ul {
     display: flex;
@@ -857,11 +844,6 @@ footer {
         font-size: 2.65vw;
     }
 
-
-    #imgs {
-        order: 1;
-        width: 100%;
-    }
     #tarjeta {
         margin-top: -44.5%;
         margin-right: 56%;
